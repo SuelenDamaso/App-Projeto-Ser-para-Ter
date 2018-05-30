@@ -1,26 +1,30 @@
 page-contato {
 
-    .map{
-        width: 50%;
-       height: 50%;
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .badgeOri {
+    text-align: center;
+    background-color: #44853e;
+  }
+  
+  .badgeDest {
+    text-align: center;
+    background-color: #f14736;
+  }
+.fale{
+  text-align: center; 
 }
-
-.badgeOri {
-  text-align: center;
-  background-color: #44853e;
-}
-
-.badgeDest {
-  text-align: center;
-  background-color: #f14736;
-}
+  
 h6{
-  padding: 1%;
- 
+  margin: 2%;
 }
 .logoo{
   width: 5%;
   padding: 0%;
+  margin: 1%;
 }
 
 }

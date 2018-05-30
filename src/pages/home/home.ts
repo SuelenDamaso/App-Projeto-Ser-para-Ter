@@ -16,5 +16,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  goToInfo(){
+    this.navCtrl.push(InformaçõesPage)
+  }
+
 
 }

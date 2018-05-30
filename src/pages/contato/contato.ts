@@ -15,7 +15,7 @@ export class ContatoPage {
   markers:any;
 
   estabelecimentos = [{
-    nome: 'Estabelecimento1',
+    nome: 'Projeto Ser',
     endereco: 'Endereço1',
     latitude: -23.511053,
     longitude: -47.516446
@@ -31,21 +31,18 @@ export class ContatoPage {
   }
 
   InitPage() {
-
     this.geolocation.getCurrentPosition().then(result => {
-      this.loadMap(result.coords.latitude, result.coords.longitude);
-      
-    });
-    
+      this.loadMap(result.coords.latitude, result.coords.longitude);  
+    }); 
   }
 
 
-  private loadMap(lat, lng) {
+   private loadMap(lat, lng) {
       let latLng = new google.maps.LatLng(lat, lng);
 
       let mapOptions = {
         center: latLng,
-        zoom: 14,
+        zoom: 11,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
       };
@@ -55,7 +52,7 @@ export class ContatoPage {
       this.map = new google.maps.Map(element, mapOptions);
       let marker = new google.maps.Marker({
         position: latLng,
-        title: 'Minha Localização',
+        title: 'Sua Localização',
         icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
       })
       let content = `
