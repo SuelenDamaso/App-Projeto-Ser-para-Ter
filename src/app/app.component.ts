@@ -8,6 +8,7 @@ import {InformaçõesPage} from '../pages/informações/informações';
 import { AvisosPage } from '../pages/avisos/avisos';
 import { ContatoPage } from '../pages/contato/contato';
 import { ColaboradorPage } from '../pages/colaborador/colaborador'
+import { NossosPage } from '../pages/nossos/nossos';
 
 
 @Component({
@@ -30,6 +31,8 @@ export class MyApp {
       { title: 'Avisos', component: AvisosPage },
       { title: 'Contato', component: ContatoPage },
       { title: 'Colaborador', component: ColaboradorPage },
+      { title: 'Nossos Apoiadores', component: NossosPage },
+
       
     ];
 

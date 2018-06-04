@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { ColaboradorPage } from '../colaborador/colaborador';
+import { ContatoPage } from '../contato/contato';
 
 @IonicPage()
 @Component({
@@ -19,6 +20,9 @@ export class InformaçõesPage {
   }
   goToColaborar(){
     this.navCtrl.push(ColaboradorPage)
+  }
+  goToContato(){
+    this.navCtrl.push(ContatoPage)
   }
 
 }

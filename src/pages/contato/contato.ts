@@ -42,7 +42,7 @@ export class ContatoPage {
 
       let mapOptions = {
         center: latLng,
-        zoom: 11,
+        zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
       };
