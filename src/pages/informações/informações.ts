@@ -24,5 +24,6 @@ export class InformaçõesPage {
   goToContato(){
     this.navCtrl.push(ContatoPage)
   }
+  openUrl(){ window.open('https://www.facebook.com/plenitude.sorocaba.50', '_system'); }
 
 }
